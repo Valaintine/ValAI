@@ -1,4 +1,5 @@
 # 🤖 ValAI: One-Shot Personality Chatbot SDK
+![IMG-20250213-WA0014](https://github.com/user-attachments/assets/139f6a65-7c9b-4936-96c3-81a9c5a1f0e5)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -128,14 +129,6 @@ config = {
 builder = PersonalityBuilder(api_key="your_api_key", config=config)
 ```
 
-## 📚 Documentation
-
-Comprehensive documentation is available at [docs.valai.io](https://docs.valai.io)
-
-- [Getting Started Guide](https://docs.valai.io/getting-started)
-- [API Reference](https://docs.valai.io/api)
-- [Examples](https://docs.valai.io/examples)
-- [Best Practices](https://docs.valai.io/best-practices)
 
 ## 🤝 Contributing
 
