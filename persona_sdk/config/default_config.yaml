@@ -1,0 +1,53 @@
+# Default configuration for Persona Chatbot SDK 
+ 
+model_settings: 
+  base_model: "gpt-3.5-turbo" 
+  embedding_dim: 1024 
+  hidden_dim: 512 
+  num_layers: 4 
+  dropout: 0.1 
+  attention_heads: 8 
+ 
+one_shot_learning: 
+  model_path: "models/one_shot/weights.pth" 
+  feature_dim: 2048 
+  embedding_size: 512 
+  similarity_threshold: 0.85 
+  min_confidence: 0.75 
+ 
+personality_encoder: 
+  num_traits: 128 
+  trait_embedding_dim: 256 
+  max_traits: 32 
+  pooling_strategy: "mean" 
+ 
+image_processing: 
+  image_size: 224 
+  channels: 3 
+  normalization: 
+    mean: [0.485, 0.456, 0.406] 
+    std: [0.229, 0.224, 0.225] 
+ 
+generation: 
+  max_length: 150 
+  min_length: 10 
+  temperature: 0.7 
+  top_p: 0.9 
+  top_k: 50 
+  repetition_penalty: 1.2 
+ 
+personality_traits: 
+  base_traits: 
+    - friendliness 
+    - professionalism 
+    - expertise 
+    - empathy 
+  trait_ranges: 
+    min_value: 0.0 
+    max_value: 1.0 
+ 
+api_settings: 
+  base_url: "https://api.personachat.ai/v1" 
+  timeout: 30 
+  max_retries: 3 
+  retry_delay: 1 

@@ -1,0 +1,6 @@
+This package requires Python 3.8+
+torch
+numpy
+pyyaml
+pillow
+transformers

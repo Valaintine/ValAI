@@ -1,0 +1,21 @@
+# Base Schema for Personality Templates 
+type: object 
+required: 
+  - name 
+  - version 
+  - category 
+  - traits 
+ 
+properties: 
+  name: 
+    type: string 
+  version: 
+    type: string 
+  category: 
+    type: string 
+  traits: 
+    type: object 
+    additionalProperties: 
+      type: number 
+      minimum: 0 
+      maximum: 1 
